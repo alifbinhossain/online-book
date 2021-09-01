@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=heade, initial-scale=1.0">
+
+    <!-- --------------------------- CSS STYLESHEET ---------------------------- -->
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- EXTERNAl -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class="text-center">Online Books</h1>
+        <!-- ----------------------------- INPUT FIELD ----------------------------- -->
+        <div class="input-group mb-3 w-50 mx-auto my-3">
+            <input id="search-field" type="text" class="form-control" placeholder="search books" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="" class="btn-search" type="button" id="button-addon2">Search</button>
+          </div>
+          <h5 class="text-center">Search your favourite book here..</h5>
+      <!-- -------------------------------- BOOKS -------------------------------- -->
+         <section class="container my-3">
+             <img class="d-block mx-auto w-25 my-5" src="images/PngItem_6510187.png" alt="">
+            <div id="books" class="row row-cols-1 row-cols-md-3 g-4 my-2">
+                <!-- <div class="col">
+                  <div class="card h-100 p-3">
+                    <img class="book-cover" src="images/default-book.jpg" class="card-img-top" alt="...">
+                    <div class="card-body px-0 text-center">
+                      <h5 class="card-title  text-warning mt-2 mb-3">Book Name</h5>
+                     <div class="book-details">
+                        <h6 >Author: <span>Alif</span></h6>
+                        <h6>First Publish: <span>18 June,2005</span></h6>
+                        <h6>Publisher: <span>Course Technology</span></h6>
+                        <h6>Language: <span>Eng</span></h6>
+                     </div>
+                    </div>
+                  </div>
+                </div>       -->
+              </div>
+         </section>
+    </header>
+    <footer class="text-center mb-3"><small>&copy;All rights reserved by Alif Bin Hossain 2021.</small></footer>
+
+<!-- ------------------------------ JS FILES ------------------------------- -->
+    <script src="js/script.js"></script>
 </body>
 </html>
