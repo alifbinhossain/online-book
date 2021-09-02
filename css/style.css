@@ -81,3 +81,13 @@ header {
   font-size: 0.5rem;
   margin-top: 1rem;
 }
+
+/* ------------------------------- MEDIA QUERY ------------------------------ */
+@media (max-width: 668px) {
+  .mobile-screen {
+    width: 100% !important;
+  }
+  header {
+    padding: 3rem 1rem;
+  }
+}

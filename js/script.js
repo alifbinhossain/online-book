@@ -2,7 +2,7 @@
 const toggleBanner = (displayPro, width, imgSrc) => {
   document.getElementById("banner").style.display = displayPro;
   document.getElementById("banner").innerHTML = ` <img
-  class="mx-auto ${width} mt-5 d-block"
+  class="mx-auto ${width} mt-5 d-block mobile-screen"
   src="images/${imgSrc}.png"
   alt=""
 />`;
@@ -53,6 +53,7 @@ const displayBooks = (books) => {
   } else {
     books.forEach((book) => {
       notifyText.innerHTML = `Total result : ${totalbooks}`;
+
       /* ------------------------- STORE BOOK INFORMATION ------------------------- */
       const bookName = book?.title ? book?.title : "AlifScript";
       const author = book?.author_name?.[0] ? book?.author_name?.[0] : "Alif";
