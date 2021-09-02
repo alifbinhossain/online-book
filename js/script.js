@@ -7,9 +7,7 @@ const toggleBanner = (displayPro, width, imgSrc) => {
   alt=""
 />`;
 };
-const toggleText = (Str) => {
-  document.getElementById("notify-text").innerText = Str;
-};
+
 const toggleContainer = (displayPro) => {
   document.getElementById("container").style.display = displayPro;
 };
@@ -54,7 +52,7 @@ const displayBooks = (books) => {
     toggleBanner("block", "w-50", "not-found-2");
   } else {
     books.forEach((book) => {
-      toggleText(`Total result : ${totalbooks}`);
+      notifyText.innerHTML = `Total result : ${totalbooks}`;
       /* ------------------------- STORE BOOK INFORMATION ------------------------- */
       const bookName = book?.title ? book?.title : "AlifScript";
       const author = book?.author_name?.[0] ? book?.author_name?.[0] : "Alif";
